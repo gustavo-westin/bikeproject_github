@@ -16,7 +16,6 @@ Note: the Washington’s csv file doesn’t have “Gender” or “Birth Date�
 The following repositories helped with the understanding of the project and the structure and details of some functions.
 
 •	Xhlow: (https://github.com/xhlow)
-
 •	Anitra Chattaraj: (https://github.com/Aritra96/bikeshare-project#readme)
 
 The instructors of Udacity’s nanodegree program (Programming for Data Science with Python) were very kind and helpful.
@@ -24,13 +23,12 @@ The instructors of Udacity’s nanodegree program (Programming for Data Science 
 There are some websites that were used to solve particularly doubts across this journey, the most important ones are:
 
 •	GitHub docs (https://docs.github.com/en)
-
 •	Pandas docs (https://pandas.pydata.org/docs/index.html)
-
 •	Pandas tutorials (https://pandas.pydata.org/pandas-docs/version/0.15/tutorials.html)
-
 •	“First Time Only” GitHub repository (first-timers-only label on GitHub)  
-
 •	Learn Python’s classes and objects article (https://www.learnpython.org/en/Classes_and_Objects)
-
 •	Towards Data Science’s loops and pandas article (https://towardsdatascience.com/you-dont-always-have-to-loop-through-rows-in-pandas-22a970b347ac)
+
+
+### Author
+Gustavo A. F. Westin - [linkedin profile](https://www.linkedin.com/in/gustavo-a-f-westin-85214656/)
