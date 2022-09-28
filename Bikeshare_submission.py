@@ -2,7 +2,7 @@ import time
 import pandas as pd
 import numpy as np
 
-#dictionary to access data from a csv file
+#dictionary to access data from the csv files
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
@@ -10,18 +10,18 @@ CITY_DATA = { 'chicago': 'chicago.csv',
 
 # function to get valid values for city, month and day
 def get_filters():
-    print('Hello! Let\'s explore some US bikeshare data!')
+    print("Hello! Let's explore some US bikeshare data!")
 
     # City values input
     city = str(input("Please, enter city's name: ")).lower().strip()
     while city != 'chicago' and city != 'new york city' and city != 'washington':
-        print("sorry, but you entered a city not available, please use one valid option")
+        print("sorry, but you has used an incorrect option, please choose one of them: Chicago, New York City or Washington")
         city = str(input("Please, enter city's name: ")).lower().strip()
 
     # Month values input
     month = str(input("Please, enter month that you want explore from january to june or 'all' to see all them: ")).lower().strip()
     while month != 'january' and month != 'february' and month != 'march' and month != 'april' and month != 'may' and month != 'june' and month != 'all':
-        print('You have used a non available month, please enter a valid option')
+        print('You have used a non available month, please enter a valid option: january throught ju')
         month = str(input("Please, enter month that you want explore from january to june or 'all' to see all them: ")).lower().strip()
 
     # Week day values input
