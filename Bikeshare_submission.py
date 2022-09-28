@@ -2,7 +2,7 @@ import time
 import pandas as pd
 import numpy as np
 
-#dictionary to access data from a csv file
+#dictionary to access data from the csv files
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
@@ -10,18 +10,18 @@ CITY_DATA = { 'chicago': 'chicago.csv',
 
 # function to get valid values for city, month and day
 def get_filters():
-    print('Hello! Let\'s explore some US bikeshare data!')
+    print("Hello! Let's explore some US bikeshare data!")
 
     # City values input
     city = str(input("Please, enter city's name: ")).lower().strip()
     while city != 'chicago' and city != 'new york city' and city != 'washington':
-        print("sorry, but you entered a city not available, please use one valid option")
+        print("sorry, but you has used an incorrect option, please choose one of them: Chicago, New York City or Washington")
         city = str(input("Please, enter city's name: ")).lower().strip()
 
     # Month values input
     month = str(input("Please, enter month that you want explore from january to june or 'all' to see all them: ")).lower().strip()
     while month != 'january' and month != 'february' and month != 'march' and month != 'april' and month != 'may' and month != 'june' and month != 'all':
-        print('You have used a non available month, please enter a valid option')
+        print('You have used a non available month, please enter a valid option: january throught ju')
         month = str(input("Please, enter month that you want explore from january to june or 'all' to see all them: ")).lower().strip()
 
     # Week day values input
@@ -164,8 +164,8 @@ def user_stats(df):
         oldest = int(df['Birth Year'].min())
         youngest = int(df['Birth Year'].max())
         mode_age = int(df['Birth Year'].mode()[0])
-        print(f'the oldest user born in... \n{oldest}')
-        print(f'the youngest user born in... \n{youngest}')
+        print(f'the oldest user had born in... \n{oldest}')
+        print(f'the youngest user had born in... \n{youngest}')
         print(f'the most common users birth year is... \n{mode_age}')
     except:
         print("the city you've chosen doesn't have customer's age info")
@@ -176,7 +176,7 @@ def user_stats(df):
 
 #function to allow users to consult some raw data
 def display_data(df):
-    ask = str(input("Do you want to see some data? \nPlease insert 'yes' or 'no': ")).lower().strip()
+    ask = str(input("Do you want to see some raw data? \nPlease insert 'yes' or 'no': ")).lower().strip()
     count = 0
     #while loop to show so many data a users want, but just 5 lines each
     while ask == 'yes':
